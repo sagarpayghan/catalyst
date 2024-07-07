@@ -3,6 +3,8 @@
 
 Website using  the following tech stacks: Python - Django - PostgreSQL - jQuery - Bootstrap
 
+![image](https://github.com/sagarpayghan/catalyst/assets/76406892/495e821e-6e79-403d-8e93-12c27cdb7763)
+
 ## How run the project?
 
 ### Clone the repository
