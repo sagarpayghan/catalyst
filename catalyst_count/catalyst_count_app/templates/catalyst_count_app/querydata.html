@@ -1,0 +1,83 @@
+{% extends "catalyst_count_app/base.html" %}
+
+{% block title %}Query Builder{% endblock title %}
+
+{% block content %}
+{% include "catalyst_count_app/navbar.html" %}
+{% if messages %}
+       
+{% for message in messages %}<div class="alert alert-{{message.tags}} alert-dismissible fade show">{{ message }}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>{% endfor %}
+
+{% endif %}
+        <div class="row g-3 my-2">
+            <div class="col-sm-2  offset-sm-1">
+                <div class="my-3">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Keywords">
+                </div>
+                <select class="form-select  my-3" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select class="form-select  my-3" aria-label="Default select example">
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-sm-2">
+              <select class="form-select  my-3" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select  my-3" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <select class="form-select  my-3" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+          </div>
+          <div class="col-sm-2">
+            <select class="form-select my-3" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select my-3" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select my-3" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div>
+
+
+</div>
+<div class="row">
+  <div class="col-sm-2 offset-sm-1">
+    <button class="btn btn-primary" type="submit">Query Data</button>
+    <button class="btn btn-outline-secondary mx-4" type="submit">Reset</button>
+  </div>
+</div>
+
+
+        {% endblock content %} 
