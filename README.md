@@ -1,7 +1,7 @@
 # Catalyst-count
 
 
-Website using  the following tech stacks: Python - Django - PostgreSQL - JavaScript - Bootstrap
+Website using  the following tech stacks: Python - Django - PostgreSQL - jQuery - Bootstrap
 
 ## How run the project?
 
