@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'catalyst_count.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
+        'NAME': 'db_name',
+        'USER': 'db_user',
+        'PASSWORD': 'db_user_password',
         'HOST': 'localhost',
         'PORT': '5432'
     }
