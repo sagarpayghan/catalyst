@@ -5,6 +5,14 @@ Website using  the following tech stacks: Python - Django - PostgreSQL - jQuery 
 
 ![image](https://github.com/sagarpayghan/catalyst/assets/76406892/495e821e-6e79-403d-8e93-12c27cdb7763)
 
+![image](https://github.com/sagarpayghan/catalyst/assets/76406892/1806163e-6cc3-43d8-a150-7f6b96a052a9)
+
+![image](https://github.com/sagarpayghan/catalyst/assets/76406892/3909ee21-c4e7-4247-8d3e-b159f6f7bdc4)
+
+![image](https://github.com/sagarpayghan/catalyst/assets/76406892/8f95a827-15a8-4054-9d54-823cc47b5d32)
+
+![image](https://github.com/sagarpayghan/catalyst/assets/76406892/dc023247-4629-481b-b698-06526db22b6c)
+
 ## How run the project?
 
 ### Clone the repository
