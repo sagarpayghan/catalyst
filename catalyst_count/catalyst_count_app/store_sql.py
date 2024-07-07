@@ -4,7 +4,7 @@ import os
 
 def toSQL():
     try:
-        engine = create_engine('postgresql+psycopg2://postgres:admin@localhost/postgres')
+        engine = create_engine(DATABASE_URL)
         path=os.path.join(os.getcwd(),"catalyst_count\media\data.csv")
         df=pd.read_csv(path)
         with engine.begin() as connection:
