@@ -49,6 +49,25 @@ $(document).ready(function(){
     // select query
     $("#form2").submit(function(e){
         e.preventDefault();
+        const industry=$("#industry :selected").text()
+        let formData = new FormData();
+        formData.append("industry",industry)
+
+    $.ajax({
+        url:"http://127.0.0.1:8000/post/",
+        type:"POST",
+        data:formData,
+        processData:false,
+        contentType:false,
+        success: function (data) {
+            var results = $.trim(data);
+             console.log(results);
+        },
+        error: function(request, status, error){
+             alert('Something went wrong; please try again');
+        
+        
+    });
         
         
                       
