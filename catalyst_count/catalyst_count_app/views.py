@@ -11,6 +11,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 import os
 from store_sql import toSQL
+from django.db.models import Q
 
 # Create your views here.
 @login_required(login_url="/accounts/login/",redirect_field_name="")
@@ -48,7 +49,8 @@ def delete_user(request,id):
 
 @api_view(["GET"])
 def getData(request):
-    companies_data=CompanyModel.objects.all()
+    q=Q(City='Mumbai') | Q(state='Maharashtra')
+    companies_data=CompanyModel.objects.filter(q)
     serialized=CompanySerializer(companies_data,many=True)
     return Response(serialized.data)
 
