@@ -1,6 +1,5 @@
-// File uploader
-console.log("hi")
 $(document).ready(function(){
+    //file uploader
     $("#form1").submit(function(e){
         e.preventDefault();
         let formData = new FormData();
@@ -43,8 +42,16 @@ $(document).ready(function(){
              alert('Something went wrong; please try again');
             }
            });
+    })
 
 
+
+    // select query
+    $("#form2").submit(function(e){
+        e.preventDefault();
+        
+        
+                      
     })
 })
 
